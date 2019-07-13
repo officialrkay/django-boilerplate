@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+djongo = "*"
+libsass = "*"
+django-compressor = "*"
+django-sass-processor = "*"
+split-settings = "*"
+django-split-settings = "*"
+python-memcached = "*"
+
+[requires]
+python_version = "3.6"

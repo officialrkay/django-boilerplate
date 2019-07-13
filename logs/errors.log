@@ -1,0 +1,620 @@
+[13/Jul/2019 05:11:07] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/contrib/sessions/middleware.py", line 20, in process_request
+    request.session = self.SessionStore(session_key)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/contrib/sessions/backends/cached_db.py", line 19, in __init__
+    self._cache = caches[settings.SESSION_CACHE_ALIAS]
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/cache/__init__.py", line 79, in __getitem__
+    cache = _create_cache(alias)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/cache/__init__.py", line 54, in _create_cache
+    return backend_cls(location, params)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/cache/backends/memcached.py", line 151, in __init__
+    import memcache
+ModuleNotFoundError: No module named 'memcache'
+[13/Jul/2019 05:11:07] ERROR [django.server:154] "GET / HTTP/1.1" 500 86252
+[13/Jul/2019 05:11:07] ERROR [django.request:228] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/contrib/sessions/middleware.py", line 20, in process_request
+    request.session = self.SessionStore(session_key)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/contrib/sessions/backends/cached_db.py", line 19, in __init__
+    self._cache = caches[settings.SESSION_CACHE_ALIAS]
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/cache/__init__.py", line 79, in __getitem__
+    cache = _create_cache(alias)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/cache/__init__.py", line 54, in _create_cache
+    return backend_cls(location, params)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/cache/backends/memcached.py", line 151, in __init__
+    import memcache
+ModuleNotFoundError: No module named 'memcache'
+[13/Jul/2019 05:11:07] ERROR [django.server:154] "GET /favicon.ico HTTP/1.1" 500 86412
+[13/Jul/2019 05:11:52] WARNING [django.request:228] Not Found: /
+[13/Jul/2019 05:11:52] WARNING [django.server:154] "GET / HTTP/1.1" 404 1922
+[13/Jul/2019 05:11:52] WARNING [django.request:228] Not Found: /favicon.ico
+[13/Jul/2019 05:11:52] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 1973
+[13/Jul/2019 05:12:06] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 38, in render
+    path = self.sass_processor(self.sass_processor.resolve_path(context))
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/processor.py", line 60, in __call__
+    raise FileNotFoundError("Unable to locate file {path}".format(path=path))
+FileNotFoundError: Unable to locate file assets/style/scss/main.scss
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 44, in render
+    raise TemplateSyntaxError(msg.format(context.template_name))
+django.template.exceptions.TemplateSyntaxError: Unable to locate file assets/style/scss/main.scss while rendering tag 'sass_src' in template home.html
+[13/Jul/2019 05:12:06] ERROR [django.server:154] "GET / HTTP/1.1" 500 159198
+[13/Jul/2019 05:12:55] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 38, in render
+    path = self.sass_processor(self.sass_processor.resolve_path(context))
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/processor.py", line 60, in __call__
+    raise FileNotFoundError("Unable to locate file {path}".format(path=path))
+FileNotFoundError: Unable to locate file assets/style/scss/main.scss
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 44, in render
+    raise TemplateSyntaxError(msg.format(context.template_name))
+django.template.exceptions.TemplateSyntaxError: Unable to locate file assets/style/scss/main.scss while rendering tag 'sass_src' in template home.html
+[13/Jul/2019 05:12:55] ERROR [django.server:154] "GET / HTTP/1.1" 500 159172
+[13/Jul/2019 05:12:59] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 38, in render
+    path = self.sass_processor(self.sass_processor.resolve_path(context))
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/processor.py", line 60, in __call__
+    raise FileNotFoundError("Unable to locate file {path}".format(path=path))
+FileNotFoundError: Unable to locate file assets/style/scss/main.scss
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 44, in render
+    raise TemplateSyntaxError(msg.format(context.template_name))
+django.template.exceptions.TemplateSyntaxError: Unable to locate file assets/style/scss/main.scss while rendering tag 'sass_src' in template home.html
+[13/Jul/2019 05:12:59] ERROR [django.server:154] "GET / HTTP/1.1" 500 159298
+[13/Jul/2019 05:12:59] WARNING [django.request:228] Not Found: /favicon.ico
+[13/Jul/2019 05:12:59] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 1972
+[13/Jul/2019 05:13:44] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 38, in render
+    path = self.sass_processor(self.sass_processor.resolve_path(context))
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/processor.py", line 60, in __call__
+    raise FileNotFoundError("Unable to locate file {path}".format(path=path))
+FileNotFoundError: Unable to locate file main.scss
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 44, in render
+    raise TemplateSyntaxError(msg.format(context.template_name))
+django.template.exceptions.TemplateSyntaxError: Unable to locate file main.scss while rendering tag 'sass_src' in template home.html
+[13/Jul/2019 05:13:44] ERROR [django.server:154] "GET / HTTP/1.1" 500 158892
+[13/Jul/2019 05:13:51] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 38, in render
+    path = self.sass_processor(self.sass_processor.resolve_path(context))
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/processor.py", line 60, in __call__
+    raise FileNotFoundError("Unable to locate file {path}".format(path=path))
+FileNotFoundError: Unable to locate file assets/style/scss/main.scss
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 44, in render
+    raise TemplateSyntaxError(msg.format(context.template_name))
+django.template.exceptions.TemplateSyntaxError: Unable to locate file assets/style/scss/main.scss while rendering tag 'sass_src' in template home.html
+[13/Jul/2019 05:13:51] ERROR [django.server:154] "GET / HTTP/1.1" 500 159172
+[13/Jul/2019 05:16:18] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 38, in render
+    path = self.sass_processor(self.sass_processor.resolve_path(context))
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/processor.py", line 60, in __call__
+    raise FileNotFoundError("Unable to locate file {path}".format(path=path))
+FileNotFoundError: Unable to locate file assets/style/scss/main.scss
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 44, in render
+    raise TemplateSyntaxError(msg.format(context.template_name))
+django.template.exceptions.TemplateSyntaxError: Unable to locate file assets/style/scss/main.scss while rendering tag 'sass_src' in template home.html
+[13/Jul/2019 05:16:18] ERROR [django.server:154] "GET / HTTP/1.1" 500 159172
+[13/Jul/2019 05:16:21] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 38, in render
+    path = self.sass_processor(self.sass_processor.resolve_path(context))
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/processor.py", line 60, in __call__
+    raise FileNotFoundError("Unable to locate file {path}".format(path=path))
+FileNotFoundError: Unable to locate file assets/style/scss/main.scss
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/sass_processor/templatetags/sass_tags.py", line 44, in render
+    raise TemplateSyntaxError(msg.format(context.template_name))
+django.template.exceptions.TemplateSyntaxError: Unable to locate file assets/style/scss/main.scss while rendering tag 'sass_src' in template home.html
+[13/Jul/2019 05:16:21] ERROR [django.server:154] "GET / HTTP/1.1" 500 159172
+[13/Jul/2019 05:16:53] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: navbar.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: navbar.html
+[13/Jul/2019 05:16:53] ERROR [django.server:154] "GET / HTTP/1.1" 500 153185
+[13/Jul/2019 05:17:25] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: .navbar.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: .navbar.html
+[13/Jul/2019 05:17:25] ERROR [django.server:154] "GET / HTTP/1.1" 500 153210
+[13/Jul/2019 05:17:36] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: footer.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: footer.html
+[13/Jul/2019 05:17:36] ERROR [django.server:154] "GET / HTTP/1.1" 500 153658
+[13/Jul/2019 05:17:43] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: layouts/footer.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: layouts/footer.html
+[13/Jul/2019 05:17:43] ERROR [django.server:154] "GET / HTTP/1.1" 500 153858
+[13/Jul/2019 05:17:54] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: layouts/footer.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/rishabh/.local/share/virtualenvs/project-VldN5wsr/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: layouts/footer.html
+[13/Jul/2019 05:17:54] ERROR [django.server:154] "GET / HTTP/1.1" 500 153726
